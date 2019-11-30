@@ -1,6 +1,7 @@
 using System;
+using CursoOnline.Dominio._Base;
 
-namespace CursoOnline.Dominio.Curso
+namespace CursoOnline.Dominio.Curso 
 {
      public enum PublicoAlvo
     {
@@ -10,7 +11,7 @@ namespace CursoOnline.Dominio.Curso
         Empreendedor
     }
 
-    public class Curso
+    public class Curso : Entidade
     {
 
         public string Nome { get; private set; }

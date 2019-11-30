@@ -58,7 +58,7 @@ namespace CursoOnline.Dominio.Test.Curso
 
             //Assert
             Assert.Throws<ArgumentException>(()=> _armazenadorCurso.Armazenar(_cursoDTO))
-                .ComMensagem("Nome do curso já conta no banco de dados");
+                .ComMensagem("Nome do curso já consta no banco de dados");
         }
 
 

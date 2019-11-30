@@ -17,7 +17,7 @@ namespace CursoOnline.Dominio.Curso
             var cursoJaSalvo = _cursoRepository.ObterPeloNome(cursoDTO.Nome);
 
             if(cursoJaSalvo != null)
-                throw new ArgumentException("Nome do curso já conta no banco de dados");
+                throw new ArgumentException("Nome do curso já consta no banco de dados");
             
             if(!Enum.TryParse<PublicoAlvo>(cursoDTO.PublicoAlvo, out var publicoAlvo))            
                 throw new ArgumentException("Público alvo inválido");
