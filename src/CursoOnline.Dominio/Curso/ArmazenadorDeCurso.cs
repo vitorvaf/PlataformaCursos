@@ -1,13 +1,14 @@
 using System;
+using CursoOnline.Dominio._Base;
 
 namespace CursoOnline.Dominio.Curso
 {
-    public  class ArmazenamentoDeCurso
+    public  class ArmazenadorDeCurso
     {
-        private readonly ICursoRepository _cursoRepository;
+        private readonly ICursoRepositorio _cursoRepository;
 
 
-        public ArmazenamentoDeCurso(ICursoRepository cursoRepository)
+        public ArmazenadorDeCurso(ICursoRepositorio cursoRepository)
         {
             this._cursoRepository = cursoRepository;
         }
@@ -25,9 +26,12 @@ namespace CursoOnline.Dominio.Curso
 
             var novoCurso = new CursoOnline.Dominio.Curso.Curso(cursoDTO.Nome,
                                                                 cursoDTO.CargaHoraria,
+                                                                cursoDTO.Descricao,
                                                                 (PublicoAlvo)publicoAlvo,
                                                                 cursoDTO.Valor);
+
             _cursoRepository.Adicionar(novoCurso);
+            Console.WriteLine("adicionou?");
         }
     }
     

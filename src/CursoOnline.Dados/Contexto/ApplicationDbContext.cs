@@ -2,12 +2,14 @@ using Microsoft.EntityFrameworkCore;
 using CursoOnline.Dominio.Curso;
 using System.Threading.Tasks;
 
+
+
 namespace CursoOnline.Dados.Contexto
 {
-    public class ApplicattionContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
 
-        public ApplicattionContext(DbContextOptions<ApplicattionContext> options) :base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) :base(options)
         {
             
         }

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/test/CursoOnline.Dominio.Test/CursoOnline.Dominio.Test.csproj",
+                "${workspaceFolder}/src/CursoOnline.Api/CursoOnline.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/test/CursoOnline.Dominio.Test/CursoOnline.Dominio.Test.csproj",
+                "${workspaceFolder}/src/CursoOnline.Api/CursoOnline.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/test/CursoOnline.Dominio.Test/CursoOnline.Dominio.Test.csproj",
+                "${workspaceFolder}/src/CursoOnline.Api/CursoOnline.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

@@ -21,7 +21,7 @@ namespace CursoOnline.Dominio.Curso
         public PublicoAlvo PublicoAlvo { get; private set; }
         public double Valor { get; private set; }
 
-        public Curso(string nome, int cargaHoraria, PublicoAlvo publicoAlvo, double valor)
+        public Curso(string nome, int cargaHoraria, string descricao,  PublicoAlvo publicoAlvo, double valor)
         {
             if (string.IsNullOrEmpty(nome))
                 throw new ArgumentException("Nome inválido");
@@ -37,6 +37,7 @@ namespace CursoOnline.Dominio.Curso
             this.Valor = valor;
             this.PublicoAlvo = publicoAlvo;
             this.CargaHoraria = cargaHoraria;
+            this.Descricao = descricao;
             this.Nome = nome;
         }
     }

@@ -49,7 +49,7 @@ namespace CursoOnline.Dominio.Test._Builders
 
         public Dominio.Curso.Curso Build()
         {
-            return new Dominio.Curso.Curso(_nome,_cargaHoraria,_publicoAlvo,_valor);
+            return new Dominio.Curso.Curso(_nome,_cargaHoraria, _descricao, _publicoAlvo,_valor);
         }
 
 

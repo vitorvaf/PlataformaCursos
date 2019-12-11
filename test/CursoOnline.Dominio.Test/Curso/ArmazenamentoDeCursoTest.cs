@@ -5,20 +5,21 @@ using Moq;
 using Bogus;
 using CursoOnline.Dominio.Test._Util;
 using CursoOnline.Dominio.Test._Builders;
+using CursoOnline.Dominio._Base;
 
 namespace CursoOnline.Dominio.Test.Curso
 {
-    public class ArmazenamentoDeCursoTest
+    public class ArmazenadorDeCursoTest
     {
         private readonly CursoDTO _cursoDTO;
-        public Mock<ICursoRepository> _cursoRepositoryMock { get; private set; }
-        internal ArmazenamentoDeCurso _armazenadorCurso { get; private set; }
+        public Mock<ICursoRepositorio> _cursoRepositoryMock { get; private set; }
+        internal ArmazenadorDeCurso _armazenadorCurso { get; private set; }
 
-        public ArmazenamentoDeCursoTest()
+        public ArmazenadorDeCursoTest()
         {
 
-            _cursoRepositoryMock = new Mock<ICursoRepository>();
-            _armazenadorCurso = new ArmazenamentoDeCurso(_cursoRepositoryMock.Object);
+            _cursoRepositoryMock = new Mock<ICursoRepositorio>();
+            _armazenadorCurso = new ArmazenadorDeCurso(_cursoRepositoryMock.Object);
 
             var faker = new Faker();
 

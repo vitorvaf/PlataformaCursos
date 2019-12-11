@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using CursoOnline.Dominio._Base;
 using CursoOnline.Dados.Contexto;
 
-namespace CursoOnline.Dados.Repósitorio
+namespace CursoOnline.Dados.Repositorio
 {
     public class RepositorioGenerico<T> : IRepositorioGenerico<T> where T : Entidade
     {
-        protected readonly ApplicattionContext _context;
+        protected readonly ApplicationDbContext _context;
 
-        public RepositorioGenerico(ApplicattionContext context)
+        public RepositorioGenerico(ApplicationDbContext context)
         {
             _context = context;
             

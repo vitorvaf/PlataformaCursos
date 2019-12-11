@@ -57,6 +57,7 @@ namespace CursoOnline.Dominio.Test.Curso
             {
                 Nome = "Informática Básica",
                 CargaHoraria = 80,
+                Descricao = "Curso Básico de informática",
                 PublicoAlvo = PublicoAlvo.Estudante,
                 Valor = (double)950
 
@@ -65,6 +66,7 @@ namespace CursoOnline.Dominio.Test.Curso
             //Act
             var curso = new Dominio.Curso.Curso(cursoMock.Nome,
                                   cursoMock.CargaHoraria,
+                                  cursoMock.Descricao,
                                   cursoMock.PublicoAlvo,
                                   cursoMock.Valor);
 
